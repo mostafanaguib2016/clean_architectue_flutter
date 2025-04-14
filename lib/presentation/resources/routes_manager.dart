@@ -1,5 +1,6 @@
 import 'package:clean_architecture_project/presentation/features/login/login_screen.dart';
 import 'package:clean_architecture_project/presentation/features/main/main_screen.dart';
+import 'package:clean_architecture_project/presentation/features/onboading/onboarding_screen.dart';
 import 'package:clean_architecture_project/presentation/features/register/register_screen.dart';
 import 'package:clean_architecture_project/presentation/features/splash/splash_screen.dart';
 import 'package:clean_architecture_project/presentation/resources/strings_manager.dart';
@@ -7,6 +8,7 @@ import 'package:flutter/material.dart';
 
 class Routes{
   static const String splashRoute = "/";
+  static const String onBoardingRoute = "/onBoarding";
   static const String loginRoute = "/login";
   static const String registerRoute = "/register";
   static const String forgetPasswordRoute = "/forgetPassword";
@@ -22,6 +24,8 @@ class RouteGenerator{
     switch(settings.name){
       case Routes.splashRoute:
         return MaterialPageRoute(builder: (_)=>const SplashScreen());
+      case Routes.onBoardingRoute:
+        return MaterialPageRoute(builder: (_)=>const OnboardingScreen());
       case Routes.registerRoute:
         return MaterialPageRoute(builder: (_)=>const RegisterScreen());
       case Routes.loginRoute:

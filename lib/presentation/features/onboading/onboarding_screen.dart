@@ -1,3 +1,4 @@
+import 'package:clean_architecture_project/presentation/resources/color_manager.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -10,6 +11,9 @@ class OnboardingScreen extends StatefulWidget {
 class _OnboardingScreenState extends State<OnboardingScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      backgroundColor: ColorManager.lightGrey,
+      body: const Center(child: Text("ON-Boarding")),
+    );
   }
 }
