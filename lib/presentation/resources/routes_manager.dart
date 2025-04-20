@@ -1,6 +1,6 @@
 import 'package:clean_architecture_project/presentation/features/login/login_screen.dart';
 import 'package:clean_architecture_project/presentation/features/main/main_screen.dart';
-import 'package:clean_architecture_project/presentation/features/onboading/onboarding_screen.dart';
+import 'package:clean_architecture_project/presentation/features/onboading/view/onboarding_screen.dart';
 import 'package:clean_architecture_project/presentation/features/register/register_screen.dart';
 import 'package:clean_architecture_project/presentation/features/splash/splash_screen.dart';
 import 'package:clean_architecture_project/presentation/resources/strings_manager.dart';
